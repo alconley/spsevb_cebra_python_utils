@@ -1,0 +1,100 @@
+CeBr3_Detectors:
+  - detector_number: 0
+    gain_shift: #y=mx+b
+      m: 1
+      b: 0
+    energy_calibration: #y=ax^2+bx+c, this uses the gain_shift column
+      a: 0
+      b: 1.7551059351549314
+      c: -12.273506897222896
+    time_cut:
+      centroid: -1156
+      lower_gate: -1158
+      upper_gate: -1152
+
+  - detector_number: 1
+    gain_shift: #y=mx+b
+      m: 1
+      b: 0
+    energy_calibration: #y=ax^2+bx+c, this uses the gain_shift column
+      a: 0
+      b: 1.9510278378962256
+      c: -16.0245754973971
+    time_cut:
+      centroid: -1154
+      lower_gate: -1157
+      upper_gate: -1152
+
+  - detector_number: 2
+    gain_shift: #y=mx+b
+      m: 1
+      b: 0
+    energy_calibration: #y=ax^2+bx+c, this uses the gain_shift column
+      a: 0
+      b: 1.917190081718234
+      c: 16.430212777833802
+    time_cut:
+      centroid: -1154
+      lower_gate: -1157
+      upper_gate: -1151
+
+  - detector_number: 3
+    gain_shift: #y=mx+b
+      m: 1
+      b: 0
+    energy_calibration: #y=ax^2+bx+c, this uses the gain_shift column
+      a: 0
+      b: 1.6931918955746692
+      c: 12.021258506937766
+    time_cut:
+      centroid: -1153
+      lower_gate: -1156
+      upper_gate: -1150
+
+  - detector_number: 4
+    gain_shift: #y=mx+b
+      m: 1
+      b: 0
+    energy_calibration: #y=ax^2+bx+c, this uses the gain_shift column
+      a: 0
+      b: 1.6373533248536343
+      c: 13.091030061910748
+    time_cut:
+      centroid: -1123
+      lower_gate: -1126
+      upper_gate: -1120
+
+  # - detector_number: 5
+  #   gain_shift: #y=mx+b
+  #     m: 1
+  #     b: 0
+  #   energy_calibration: #y=ax^2+bx+c, this uses the gain_shift column
+  #     a: 0
+  #     b: 1
+  #     c: 0
+  #   time_cut:
+  #     centroid: -1175
+  #     lower_gate: -1178
+  #     upper_gate: -1172
+
+  # - detector_number: 6
+  #   gain_shift: #y=mx+b
+  #     m: 1
+  #     b: 0
+  #   energy_calibration: #y=ax^2+bx+c, this uses the gain_shift column
+  #     a: 0
+  #     b: 1
+  #     c: 0
+  #   time_cut:
+  #     centroid: -1176
+  #     lower_gate: -1180
+  #     upper_gate: -1174
+
+SPS:
+  - ColumnName: Xavg
+    energy_calibration: #y=ax^2+bx+c
+      a: 0
+      b: 1
+      c: 0
+      bins: 400
+      range: [0,6000] 
